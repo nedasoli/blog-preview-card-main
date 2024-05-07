@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--Yellow);
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    color: var(--Black);
+}
+@media only screen and (min-width: 376px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .card{
+        width: 384px;
+        box-shadow: 16px 16px  black;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+    .card{
+        width: 327px;
+        box-shadow: 8px 8px black;
+    }
+}
+
+
+.card{
+    border: 1px solid black;
+    
+    border-radius: 20px;
+    padding: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: var(--White);
+}
+
+.card .content {
+    width: 288px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.description{
+    color: var(--Grey);
+    font-size: 14px;
+}
+.tag{
+    padding: 4px 12px;
+    display: inline-block;
+    background-color: var(--Yellow);
+    border-radius: 4px;
+}
+.title{
+    font-weight: 800;
+    font-size: 20px;
+}
+.title:hover{
+    color: var(--Yellow);
+}
+.date{
+    font-size: 13px;
+}
+.avatar{
+    display: inline;
+    vertical-align: middle;
+}
+.avatar img{
+    width: 32px;
+    border-radius: 50%;
+    display: inline;
+    vertical-align: middle;
+}
+.avatar p{
+    font-weight: 500;
+    display: inline;
+    vertical-align: middle;
+}
